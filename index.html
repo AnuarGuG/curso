@@ -1,23 +1,256 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pruebas con SantiRM</title>
+  <meta charset="UTF-8">
+  <title>Anuar- LandingPage</title>
+  <link rel="stylesheet" href="./style.css">
+
 </head>
 <body>
-    <header>
-        <h1>BIENVENIDO MI ESTIMADO A TUS CLASES</h1>
-        <nav>
-            <ul>
-                <li>Inicio</li>
-                <li>Sobre la clase</li>
-                <li>Incribirme</li>
-            </ul>
-        </nav>
-    </header>
-    <div>
-        <img src="" alt="">
-    </div>
+<!-- partial:index.partial.html -->
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de destino con animaciones basadas en desplazamiento</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+<body>
+    <nav class="Navbar">
+      <div class="container">
+        <div class="Logo">Anuar G&G</div>
+
+        <div id="menu" class="menu">
+          <header class="inline">
+            <div class="Logo">Anuar G&G.</div>
+            <button
+              id="closeMenuBtn"
+              title="Close Menu"
+              aria-label="Close Menu"
+              class="NavButton"
+            >
+              <i class="ri-close-line"></i>
+            </button>
+          </header>
+
+          <a href="#" class="NavLink">Inicio</a>
+          <a href="#schedules" class="NavLink">Horarios</a>
+          <a href="#plans" class="NavLink">Temas</a>
+          <a href="#about" class="NavLink">Sobre esto</a>
+        </div>
+
+        <button
+          id="openMenuBtn"
+          title="Open Menu"
+          aria-label="Open Menu"
+          class="NavButton"
+        >
+          <i class="ri-menu-line"></i>
+        </button>
+      </div>
+    </nav>
+    <main>
+      <section id="home">
+        <div class="hero">
+          <div class="visual">
+            <picture>
+              <source
+                srcset="
+                 https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero.webp
+                "
+                type="image/avif"
+                media="(width > 1024px)"
+              />
+              <source
+                srcset="
+                  https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero-mobile.avif
+                "
+                type="image/avif"
+              />
+              <source
+                srcset="
+                  https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero.webp
+                "
+                media="(width > 1024px)"
+                type="image/webp"
+              />
+              <img
+                src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/hero-mobile.webp"
+                alt="fitness" 
+              />
+            </picture>
+          </div>
+
+          <div class="content">
+            <h1>Hey que tal futuro Programador</h1>
+            <div class="wrapper">
+              <a href="#discover" class="LinkButton Primary"> DESCUBRE MAS </a>
+            </div>
+          </div>
+        </div>
+
+        <div id="discover" class="fold">
+          <div class="subject">
+            <p>
+                Es un nuevo día,
+              <span style="color: var(--brand-1)"
+                >una nueva oportunidad para esculpir la mejor versión de ti mismo.
+                Abraza el codigo,</span
+              >
+              siente el ardor y conquista tus objetivos de acondicionamiento mental con firmeza y
+               determinación.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="schedules" class="schedule">
+        <div class="subject">
+          <div class="container">
+            <div class="table-wrapper">
+              <h2>Programación semanal</h2>
+              <table>
+                <tr>
+                  <th>Dia</th>
+                  <th>Estudios programado</th>
+                  <th>Tiempo</th>
+                </tr>
+                <tr>
+                  <td>Lunes</td>
+                  <td>Fundamentos de la programacion</td>
+                  <td>9:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Martes</td>
+                  <td>Introduccion html</td>
+                  <td>9:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Miercoles</td>
+                  <td>Estructuras HTML</td>
+                  <td>8:30 AM</td>
+                </tr>
+                <tr>
+                  <td>Jueves</td>
+                  <td>Etiquetas y Sintaxis html</td>
+                  <td>9:00 AM</td>
+                </tr>
+                <tr>
+                  <td>Viernes</td>
+                  <td>Tablas, imagenes & Listas</td>
+                  <td>9:00 AM</td>
+                </tr>
+              </table>
+            </div>
+            <div class="table-wrapper">
+              <h2>Últimos 5 ejercicios</h2>
+              <table>
+                <tr>
+                  <th>Ejercicios/Practicas</th>
+                  <th>Duracion</th>
+                </tr>
+                <tr>
+                  <td>Teoria HTML</td>
+                  <td>45 min</td>
+                </tr>
+                <tr>
+                  <td>Codificar 1er HTML</td>
+                  <td>20 min</td>
+                </tr>
+                <tr>
+                  <td>Practicar etiquetas y sintaxis</td>
+                  <td>60 min</td>
+                </tr>
+                <tr>
+                  <td>Agregar Imagenes,Tablas y Listas</td>
+                  <td>40 min</td>
+                </tr>
+                <tr>
+                  <td>Mi Primera Pagina</td>
+                  <td>50 min</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="showcase">
+          <video
+            autoplay
+            loop
+            muted
+            poster="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/poster.webp"
+            role="none"
+          >
+            <source src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/demo.mp4" type="video/mp4" />
+          </video>
+          <img src="https://raw.githubusercontent.com/mobalti/open-props-interfaces/main/landing-page-with-scroll-driven/assets/images/rhythm.png" alt="Rhythm" />
+        </div>
+      </section>
+
+      <section id="plans" class="cards">
+        <div class="subject">
+          <div class="container">
+            <a href="#" class="Card">
+              <i class="ri-trophy-line"></i>
+              <div>
+                <h2>Objetivos del curso</h2>
+                <ul>
+                  <li>Comprender HTML: dia 1</li>
+                  <li>Codificar tu primer archivo: dia 1 </li>
+                  <li>Conocer las posibilidades HTML: dia 1</li>
+                  <li>Como dar estilo archivos HTML: dia 2</li>
+                  <li>Comprender como funcionan las computadoras y la programacion</li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="Card">
+              <i class="ri-flag-2-line"></i>
+              <div>
+                <h2>Retos</h2>
+                <ul>
+                  <li>Crear tu primera pagina </li>
+                  <li>Conocer que es HTML,CSS</li>
+                  <li>Comprender como desarrollar y subir a internet tus paginas</li>
+                </ul>
+              </div>
+            </a>
+            <a href="#" class="Card">
+              <i class="ri-team-line"></i>
+              <div>
+                <h2>Actividad en Grupo</h2>
+                <ul>
+                  <li>Desarrollo de la pagina del grupo con perfiles de cada integrante</li>
+                  <li>Competencia de la pagina con mas funciones </li>
+                  <li>Exposiciones sobre temas especificos para reforzar lo aprendido</li>
+                </ul>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div id="target-word">love</div>
+        <footer>
+          <p>
+            Porque programar no estan dificil, dificil es no programar
+            <a
+              href="https://codepen.io/mobalti"
+              style="color: var(--brand-1); text-decoration: none"
+              >UNETE</a
+            >
+            a nuestro grupo y conoce el mundo del coding
+          </p>
+        </footer>
+      </section>
+    </main>
+   
+  </body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
 </body>
 </html>
